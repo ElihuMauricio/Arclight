@@ -26,7 +26,7 @@ public class ForgeArclightServer implements ArclightServer {
             } else if (bus instanceof IEventBus eventBus) {
                 eventBus.register(target);
             } else {
-                throw new IllegalArgumentException("Unknown bus type " + bus + " on platform " + ArclightPlatform.current());
+                throw new IllegalArgumentException("Unknown bus type " + bus + " on platformm " + ArclightPlatform.current());
             }
         } catch (Throwable t) {
             throw new RuntimeException(t);
